@@ -867,6 +867,9 @@
   "/bupt/rczp": [
     "nczitzk"
   ],
+  "/byau/news/:type_id": [
+    "ueiu"
+  ],
   "/byteclicks/": [
     "TonyRL"
   ],
@@ -1267,6 +1270,9 @@
     "btdwv",
     "marvolo666",
     "yan12125"
+  ],
+  "/cpcaauto/news/:type?/:id?": [
+    "nczitzk"
   ],
   "/cpcey/:type?": [
     "Fatpandac"
@@ -3387,11 +3393,13 @@
   ],
   "/lofter/tag/:name?/:type?": [
     "hoilc",
-    "nczitzk"
+    "nczitzk",
+    "LucunJi"
   ],
   "/lofter/user/:name?": [
     "hondajojo",
-    "nczitzk"
+    "nczitzk",
+    "LucunJi"
   ],
   "/logclub/:category{.+}?": [],
   "/logclub/lc_report/:id?": [
@@ -6568,6 +6576,12 @@
   ],
   "/zrblog/": [
     "cnkmmk"
+  ],
+  "/zsxq/group/:id/:scope?": [
+    "KarasuShin"
+  ],
+  "/zsxq/user/:id": [
+    "KarasuShin"
   ],
   "/zuel/notice": [
     "nczitzk"
