@@ -56038,7 +56038,7 @@
     "routes": {
       "/:id/:params?": {
         "path": "/:id/:params?",
-        "name": "Unknown",
+        "name": "Test",
         "maintainers": [
           "DIYgod",
           "NeverBehave"
@@ -56046,7 +56046,7 @@
         "location": "index.ts"
       }
     },
-    "name": "Unknown"
+    "name": "RSSHub Test"
   },
   "tfc-taiwan": {
     "routes": {
