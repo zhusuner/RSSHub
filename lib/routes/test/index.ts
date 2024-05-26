@@ -11,7 +11,7 @@ let cacheIndex = 0;
 
 export const route: Route = {
     path: '/:id/:params?',
-    name: 'Unknown',
+    name: 'Test',
     maintainers: ['DIYgod', 'NeverBehave'],
     handler,
 };
