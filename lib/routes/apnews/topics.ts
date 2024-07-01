@@ -1,14 +1,19 @@
 import { Route } from '@/types';
 import got from '@/utils/got';
 import { load } from 'cheerio';
-import { fetchArticle } from './utils';
+import { fetchArticle, removeDuplicateByKey } from './utils';
 const HOME_PAGE = 'https://apnews.com';
 
 export const route: Route = {
     path: '/topics/:topic?',
-    categories: ['traditional-media'],
+    categories: ['traditional-media', 'popular'],
     example: '/apnews/topics/apf-topnews',
-    parameters: { topic: 'Topic name, can be found in URL. For example: the topic name of AP Top News [https://apnews.com/apf-topnews](https://apnews.com/apf-topnews) is `apf-topnews`, `trending-news` by default' },
+    parameters: {
+        topic: {
+            description: 'Topic name, can be found in URL. For example: the topic name of AP Top News [https://apnews.com/apf-topnews](https://apnews.com/apf-topnews) is `apf-topnews`',
+            default: 'trending-news',
+        },
+    },
     features: {
         requireConfig: false,
         requirePuppeteer: false,
@@ -43,14 +48,14 @@ async function handler(ctx) {
                 link: $(e).find('a').attr('href'),
             }))
             .filter((e) => typeof e.link === 'string')
-            .map((item) => (new URL(item.link).hostname === 'apnews.com' ? fetchArticle(item) : item))
+            .map((item) => fetchArticle(item))
     );
 
     return {
         title: $('title').text(),
         description: $("meta[property='og:description']").text(),
         link: url,
-        item: items,
+        item: removeDuplicateByKey(items, 'guid'),
         language: $('html').attr('lang'),
     };
 }
