@@ -1392,9 +1392,6 @@
     "Fatpandac"
   ],
   "/codeforces/recent-actions/:minrating?": [],
-  "/cohere/blog": [
-    "Loongphy"
-  ],
   "/coindesk/consensus-magazine": [
     "jameshih"
   ],
@@ -2673,9 +2670,8 @@
   "/gov/ndrc/xwdt/:category{.+}?": [
     "nczitzk"
   ],
-  "/gov/ndrc/zfxxgk": [
-    "howfool",
-    "nczitzk"
+  "/gov/ndrc/zfxxgk/iteminfo": [
+    "howfool"
   ],
   "/gov/nea/sjzz/ghs": [
     "nczitzk"
@@ -2971,7 +2967,7 @@
   "/hellobtc/news": [
     "Fatpandac"
   ],
-  "/hellogithub/home/:sort?/:id?": [
+  "/hellogithub/article/:sort?/:id?": [
     "moke8",
     "nczitzk"
   ],
@@ -3181,9 +3177,6 @@
     "nczitzk"
   ],
   "/hust/gs/:category{.+}?": [
-    "nczitzk"
-  ],
-  "/hust/mse/:category{.+}?": [
     "nczitzk"
   ],
   "/hust/yjs": [
@@ -3908,9 +3901,6 @@
     "ladeng07",
     "3401797899"
   ],
-  "/lorientlejour/:category?": [
-    "quiniapiezoelectricity"
-  ],
   "/lovelive-anime/news/:abbr?/:category?/:option?": [
     "axojhf",
     "zhaoweizhong"
@@ -4248,7 +4238,8 @@
     "pseudoyu"
   ],
   "/natgeo/dailyselection": [
-    "OrangeEd1t"
+    "OrangeEd1t",
+    "pseudoyu"
   ],
   "/natgeo/:cat/:type?": [
     "fengkx"
