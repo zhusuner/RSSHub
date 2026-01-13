@@ -26180,7 +26180,8 @@ export default {
       "/telegraph/:category?": {
         "path": "/telegraph/:category?",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "example": "/cls/telegraph",
         "parameters": {
@@ -66053,8 +66054,7 @@ export default {
       "/topic/text/:id": {
         "path": "/topic/text/:id",
         "categories": [
-          "social-media",
-          "popular"
+          "social-media"
         ],
         "example": "/jike/topic/text/553870e8e4b0cafb0a1bef68",
         "parameters": {
